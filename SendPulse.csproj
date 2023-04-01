@@ -1,0 +1,19 @@
+<!--
+ * SendPulse.csproj
+ * 
+ *   Created: 2022-12-06-01:55:38
+ *   Modified: 2022-12-06-01:55:39
+ * 
+ *   Author: David G. Moore, Jr. <david@dgmjr.io>
+ *   
+ *   Copyright © 2022-2023 David G. Moore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project Sdk="Microsoft.Build.Traversal">
+  <ItemGroup>
+    <ProjectReference Include="./**/*.csproj" />
+    <PackageReference Remove="$(MSBuildThisFileFullPath)" />
+    <PackageReference Remove="$(MSBuildThisFile)" />
+  </ItemGroup>
+</Project>

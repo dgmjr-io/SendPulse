@@ -1,0 +1,25 @@
+<!--
+ * SendPulse.Identity.props
+ * 
+ *   Created: 2022-11-27-08:02:38
+ *   Modified: 2022-11-27-08:02:38
+ * 
+ *   Author: David G. Moore, Jr. <david@dgmjr.io>
+ *   
+ *   Copyright © 2022-2023 David G. Moore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+    <ItemGroup>
+        <Using Include="SendPulse.Identity" />
+        <Using Include="SendPulse.Identity.ClaimTypeNames.Uris" Alias="SpUris" />
+        <Using Include="SendPulse.Identity.ClaimTypeNames" Alias="SpId" />
+        <Using Include="SendPulse.Identity.ClaimTypeNames.UriFragments" Alias="SpIdFrags" />
+        <!-- <Using Include="Dgmjr.Abstractions" /> -->
+    </ItemGroup>
+    <ItemGroup>
+        <!-- <PackageReference Include="Dgmjr.Identity.Claims" /> -->
+        <!-- <PackageReference Include="Dgmjr.Abstractions" /> -->
+    </ItemGroup>
+</Project>

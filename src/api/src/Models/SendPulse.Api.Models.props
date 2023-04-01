@@ -1,0 +1,39 @@
+<Project>
+  <ItemGroup>
+    <PackageReference Include="RestSharp" />
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="JsonSubTypes" />
+    <PackageReference Include="System.ComponentModel" />
+    <PackageReference Include="System.ComponentModel.Annotations" />
+    <PackageReference Include="System.Xml.XDocument" />
+    <PackageReference Include="Microsoft.CSharp" VersionOverride="4.7.0" />
+    <PackageReference Include="System.Collections.Concurrent" />
+    <PackageReference Include="System.Collections.Generic.Usings" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+    <PackageReference Include="Microsoft.Extensions.Options" />
+    <PackageReference Include="Telegram.Bot" />
+  </ItemGroup>
+  <ItemGroup>       
+    <Using Include="System.ComponentModel.DataAnnotations" />
+    <Using Include="Newtonsoft.Json.Converters" />
+    <Using Include="Newtonsoft.Json" />
+    <Using Include="System.Runtime.Serialization" />
+    <Using Include="System.Runtime.Serialization" /> 
+    <!-- <Using Include="System.Collections.Generic.Dictionary&lt;string,string&gt;" Alias="StringDictionary" />
+    <Using Include="System.Collections.Generic.IDictionary&lt;string,string&gt;" Alias="IStringDictionary" /> -->
+    <Using Include="System.Collections.Generic.Dictionary&lt;string,object&gt;" Alias="StringObjectDictionary" />
+    <Using Include="System.Collections.Generic.IDictionary&lt;string,object&gt;" Alias="IStringObjectDictionary" />
+    <!-- <Using Include="System.Collections.Concurrent.ConcurrentDictionary&lt;string,string&gt;" Alias="ConcurrentStringDictionary" /> -->
+    <!-- <Using Include="System.Collections.Generic.IDictionary&lt;string,string&gt;" Alias="IStringDictionary" /> -->
+    <!-- <Using Include="System.Collections.ObjectModel.ReadOnlyDictionary&lt;string,string&gt;" Alias="ReadOnlyStringDictionary" />
+    <Using Include="System.Collections.Generic.IReadOnlyDictionary&lt;string,string&gt;" Alias="IReadOnlyStringDictionary" /> -->
+    <Using Include="SendPulse.Api.Enums" />
+    <Using Include="System.Text.Json.Serialization.JsonPropertyNameAttribute" Alias="JProp" />
+    <!-- <Using Include="SendPulse.Api.Abstractions" /> -->
+    <!-- <Using Include="SendPulse.Api.Client.Abstractions" /> -->
+    <Using Include="System.Text.Json.Serialization" />
+    <Using Include="System.Collections.Generic.Dictionary&lt;string, System.Text.Json.JsonElement&gt;" Alias="JExtensionDict" />
+    <Using Include="Newtonsoft.Json.JsonConverterAttribute" Alias="JsonConverterAttribute" />
+    <Using Include="System.Text.Json.Serialization.JsonExtensionDataAttribute" Alias="JExtensionAttribute" />
+  </ItemGroup>
+</Project>

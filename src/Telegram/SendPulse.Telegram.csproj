@@ -1,0 +1,25 @@
+<!--
+ * SendPulse.Telegram.csproj
+ * 
+ *   Created: 2022-12-01-11:48:38
+ *   Modified: 2022-12-01-11:48:39
+ * 
+ *   Author:  <david@dgmjr.io>
+ *   
+ *   Copyright © 2022-2023 , All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net6.0;net7.0</TargetFrameworks>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AnyOf.Usings" />
+    <PackageReference Include="Dgmjr.Primitives" />
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="System.Text.Json" />
+    <PackageReference Include="System.Text.Json.Usings" />
+  </ItemGroup>
+</Project>

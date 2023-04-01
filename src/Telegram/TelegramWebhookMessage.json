@@ -1,0 +1,236 @@
+{
+  "type": "object",
+  "body": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "info": {
+          "type": "object",
+          "properties": {
+            "message": {
+              "type": "object",
+              "properties": {
+                "channel_data": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "object",
+                      "properties": {
+                        "reply_to_message": {
+                          "from": {
+                            "type": "object",
+                            "properties": {
+                              "username": {
+                                "type": "string"
+                              },
+                              "first_name": {
+                                "type": "string"
+                              },
+                              "is_bot": {
+                                "type": "boolean"
+                              },
+                              "id": {
+                                "type": "integer"
+                              }
+                            },
+                            "text": {
+                              "type": "string"
+                            },
+                            "forward_from": {
+                              "type": "object",
+                              "properties": {
+                                "username": {
+                                  "type": "string"
+                                },
+                                "first_name": {
+                                  "type": "string"
+                                },
+                                "last_name": {
+                                  "type": "string"
+                                },
+                                "is_bot": {
+                                  "type": "boolean"
+                                },
+                                "language_code": {
+                                  "type": "string"
+                                },
+                                "id": {
+                                  "type": "integer"
+                                }
+                              }
+                            }
+                          },
+                          "disable_web_page_preview": {},
+                          "text": {
+                            "type": "string"
+                          },
+                          "disable_notification": {},
+                          "parse_mode": {},
+                          "reply_markup": {}
+                        }
+                      },
+                      "contact": {},
+                      "message_id": {
+                        "type": "integer"
+                      },
+                      "chat_id": {
+                        "type": "integer"
+                      }
+                    }
+                  },
+                  "id": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "service": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "bot": {
+            "type": "object",
+            "properties": {
+              "url": {
+                "type": "string"
+              },
+              "external_id": {
+                "type": "string"
+              },
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          },
+          "contact": {
+            "type": "object",
+            "properties": {
+              "username": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "last_message": {
+                "type": "string"
+              },
+              "photo": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "width": {
+                      "type": "integer"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "file_id": {
+                      "type": "string"
+                    },
+                    "file_unique_id": {
+                      "type": "string"
+                    },
+                    "file_size": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "width",
+                    "height",
+                    "file_id",
+                    "file_unique_id",
+                    "file_size"
+                  ]
+                }
+              },
+              "video": {
+                "type": "object",
+                "properties": {
+                  "thumb": {
+                    "type": "object",
+                    "properties": {
+                      "width": {
+                        "type": "integer"
+                      },
+                      "height": {
+                        "type": "integer"
+                      },
+                      "file_id": {
+                        "type": "string"
+                      },
+                      "file_unique_id": {
+                        "type": "string"
+                      },
+                      "file_size": {
+                        "type": "integer"
+                      }
+                    }
+                  },
+                  "file_name": {
+                    "type": "string"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "width": {
+                    "type": "integer"
+                  },
+                  "file_unique_id": {
+                    "type": "string"
+                  },
+                  "file_size": {
+                    "type": "integer"
+                  },
+                  "duration": {
+                    "type": "integer"
+                  },
+                  "mime_type": {
+                    "type": "string"
+                  },
+                  "file_id": {
+                    "type": "string"
+                  }
+                }
+              },
+              "variables": {
+                "type": "object",
+                "properties": {},
+                "telegram_id": {
+                  "type": "integer"
+                },
+                "id": {
+                  "type": "string"
+                }
+              }
+            },
+            "date": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "info",
+            "service",
+            "title",
+            "bot",
+            "contact",
+            "date"
+          ]
+        }
+      }
+    }
+  }
+}

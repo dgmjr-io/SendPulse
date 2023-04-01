@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>A library for interacting with the SendPulse Telegram chatbot APIc</Description>
+    <AssemblyName>SendPulse.Api</AssemblyName>
+    <PackageId>SendPulse.Api</PackageId>
+    <Title>SendPulse Telegram Chatbot API</Title>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <RootNamespace>SendPulse.Api</RootNamespace>
+    <!-- <TargetFramework>netstandard2.0</TargetFramework> -->
+    <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+    <LangVersion>preview</LangVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../Abstractions/SendPulse.Api.Abstractions.csproj" />
+    <!--<ProjectReference Include="../../../../../Telegram/src/Converters/Telegram.JsonConverters.csproj" />-->
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Remove="Telegram.Bot" />
+    <PackageReference Include="Telegram.Bot"   VersionOverride="$(TelegramBotVersion)"/>
+    <PackageReference Include="System.Text.Json" />
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="System.Collections.Generic.Usings" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" /> -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="System.ComponentModel.DataAnnotations" />
+    <Using Include="Newtonsoft.Json.Converters" />
+    <Using Include="Newtonsoft.Json" />
+    <Using Include="System.Runtime.Serialization" />
+  </ItemGroup>
+
+</Project>

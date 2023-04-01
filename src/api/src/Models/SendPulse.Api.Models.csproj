@@ -1,0 +1,21 @@
+<!--
+ * SendPulse.Api.Models.csproj
+ * 
+ *   Created: 2022-12-08-05:34:28
+ *   Modified: 2022-12-08-05:34:29
+ * 
+ *   Author:  <david@dgmjr.io>
+ *   
+ *   Copyright © 2022-2023 , All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Telegram.Bot"   VersionOverride="$(TelegramBotVersion)" />
+    <Reference Remove="System.Collections.Concurrent" />
+  </ItemGroup>
+</Project>
