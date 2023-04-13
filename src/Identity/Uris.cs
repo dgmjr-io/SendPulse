@@ -16,7 +16,8 @@ public static partial class ClaimTypeNames
 {
     public static partial class Uris
     {
-        /// <inheritdoc cref="SpId.BaseUri"/>
+        /// <summary><inheritdoc cref="SpId.BaseUri" path="/summary" /></summary>
+        /// <value><inheritdoc cref="SpId.BaseUri" path="/value" /></value>
         public static readonly uri BaseUri = new(SpId.BaseUri);
         /// <inheritdoc cref="SpId.ApiBaseUri"/>
         public static readonly uri ApiBaseUri = new(SpId.ApiBaseUri);
