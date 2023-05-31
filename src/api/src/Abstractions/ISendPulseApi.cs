@@ -8,4 +8,5 @@ public interface ISendPulseApi
         IContactsApi,
         IFlowsApi,
         ITriggersApi,
-        IVariablesApi { }
+        IVariablesApi
+{ }

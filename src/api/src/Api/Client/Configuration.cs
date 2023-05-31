@@ -172,7 +172,8 @@ namespace SendPulse.Api.Client
             int timeout = 100000,
             string userAgent = "Swagger-Codegen/1.0.0/csharp"
         // ReSharper restore UnusedParameter.Local
-        ) { }
+        )
+        { }
 
         /// <summary>Initializes a new instance of the Configuration class.</summary>
         /// <param name="apiClient">Api client.</param>

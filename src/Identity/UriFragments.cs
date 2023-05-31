@@ -8,7 +8,7 @@
  *   
  *   Copyright © 2022 - 2023 David G. Moore, Jr., All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
- */ 
+ */
 
 namespace SendPulse.Identity;
 
@@ -33,7 +33,7 @@ public static partial class ClaimTypeNames
 
         /// <value>access_token/</value>
         public const string AccessToken = "access_token/";
-        
+
         /// <value>object_id/</value>
         public const string ObjectId = "object_id/";
 
