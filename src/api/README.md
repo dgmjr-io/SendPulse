@@ -44,7 +44,7 @@ using SendPulse.Api.Models;
 <a name="packaging"></a>
 ## Packaging
 
-A `.nuspec` is included with the project. You can follow the Nuget quickstart to [create](https://docs.microsoft.com/en-us/nuget/quickstart/create-and-publish-a-package#create-the-package) and [publish](https://docs.microsoft.com/en-us/nuget/quickstart/create-and-publish-a-package#publish-the-package) packages.
+A `.nuspec` is included with the project. You can follow the Nuget quickstart to [create](https://docs.microsoft.com/nuget/quickstart/create-and-publish-a-package#create-the-package) and [publish](https://docs.microsoft.com/nuget/quickstart/create-and-publish-a-package#publish-the-package) packages.
 
 This `.nuspec` uses placeholders from the `.csproj`, so build the `.csproj` directly:
 
@@ -52,7 +52,7 @@ This `.nuspec` uses placeholders from the `.csproj`, so build the `.csproj` dire
 nuget pack -Build -OutputDirectory out SendPulse.Api.csproj
 ```
 
-Then, publish to a [local feed](https://docs.microsoft.com/en-us/nuget/hosting-packages/local-feeds) or [other host](https://docs.microsoft.com/en-us/nuget/hosting-packages/overview) and consume the new package via Nuget as usual.
+Then, publish to a [local feed](https://docs.microsoft.com/nuget/hosting-packages/local-feeds) or [other host](https://docs.microsoft.com/nuget/hosting-packages/overview) and consume the new package via Nuget as usual.
 
 <a name="getting-started"></a>
 ## Getting Started
