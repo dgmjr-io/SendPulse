@@ -1,14 +1,14 @@
-/* 
+/*
  * ClaimType.cs
- * 
+ *
  *   Created: 2023-03-25-08:34:08
  *   Modified: 2023-03-25-08:34:08
- * 
+ *
  *   Author: David G. Moore, Jr. <david@dgmjr.io>
- *   
+ *
  *   Copyright © 2022 - 2023 David G. Moore, Jr., All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
- */ 
+ */
 
 namespace SendPulse.Identity.Enums;
 using System.ComponentModel.DataAnnotations;
@@ -48,5 +48,5 @@ public enum ClaimType
     /// <inheritdoc cref="ClaimTypeNames.OAuth2EncpointUri" />
     [Display(Name = "The OAuth2 Endpoint URI", ShortName = nameof(OAuth2EncpointUri), Description = "The URI for the SendPulse API's OAuth2 endpoint.")]
     [Uri(ClaimTypeNames.OAuth2EncpointUri)]
-    OAuth2EncpointUri
+    OAuth2EndpointUri
 }

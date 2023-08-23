@@ -4,7 +4,7 @@
 *   Created: 2022-12-09-04:48:30
 *   Modified: 2022-12-09-04:48:30
 *
-*   Author:  <justin@Dgmjr.com>
+*   Author:  <david@dgmjr.io>
 *
 *   Copyright © 2022-2023 , All Rights Reserved
 *      License: MIT (https://opensource.org/licenses/MIT)

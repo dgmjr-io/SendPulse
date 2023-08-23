@@ -1,14 +1,14 @@
-/* 
+/*
  * UriStrings.cs
- * 
+ *
  *   Created: 2023-03-19-02:52:53
  *   Modified: 2023-03-25-08:46:00
- * 
+ *
  *   Author: David G. Moore, Jr. <david@dgmjr.io>
- *   
+ *
  *   Copyright © 2022 - 2023 David G. Moore, Jr., All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
- */ 
+ */
 
 namespace SendPulse.Identity;
 public static partial class ClaimTypeNames
@@ -27,8 +27,8 @@ public static partial class ClaimTypeNames
 
     /// <summary>The base URI for the SendPulse identity domain.</summary>
     /// <value><inheritdoc cref="BaseUri" /><inheritdoc cref="UriFragments.Identity" /></value>
-    public const string Identity = BaseUri + SpIdFrags.Identity;    
-    
+    public const string Identity = BaseUri + SpIdFrags.Identity;
+
     /// <summary>A URI for a SendPulse object ID.</summary>
     /// <value><inheritdoc cref="BaseUri" /><inheritdoc cref="UriFragments.ObjectId" /></value>
     public const string ObjectId = Identity + SpIdFrags.ObjectId;
@@ -43,5 +43,5 @@ public static partial class ClaimTypeNames
 
     /// <summary>The URI for the SendPulse API's OAuth2 endpoint.</summary>
     /// <value><inheritdoc cref="OAuth" /><inheritdoc cref="UriFragments.AccessToken" /></value>
-    public const string OAuth2EncpointUri = ApiBaseUri + UriFragments.OAuth + UriFragments.AccessToken;
+    public const string OAuth2EndpointUri = ApiBaseUri + UriFragments.OAuth + UriFragments.AccessToken;
 }
