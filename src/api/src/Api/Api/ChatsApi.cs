@@ -23,6 +23,7 @@ using SendPulse.Api.Client;
 using SendPulse.Api.Models;
 
 namespace SendPulse.Api;
+
 using Abstractions;
 
 /// <summary>

@@ -19,8 +19,10 @@ public static partial class ClaimTypeNames
         /// <summary><inheritdoc cref="SpId.BaseUri" path="/summary" /></summary>
         /// <value><inheritdoc cref="SpId.BaseUri" path="/value" /></value>
         public static readonly uri BaseUri = new(SpId.BaseUri);
+
         /// <inheritdoc cref="SpId.ApiBaseUri"/>
         public static readonly uri ApiBaseUri = new(SpId.ApiBaseUri);
+
         /// <inheritdoc cref="SpId.OAuth2EncpointUri"/>
         public static readonly uri OAuth2EndpointUri = new(SpId.OAuth2EndpointUri);
     }

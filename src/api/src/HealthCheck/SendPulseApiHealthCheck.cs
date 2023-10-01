@@ -11,6 +11,7 @@
  */
 
 namespace SendPulse.Api.HealthCheck;
+
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using SendPulse.Api.Abstractions;
 

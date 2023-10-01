@@ -11,6 +11,7 @@
 */
 
 namespace Telegram.JsonConverters;
+
 using System.Text.Json;
 using static System.Text.Encoding;
 

@@ -1,4 +1,5 @@
 namespace SendPulse.Telegram;
+
 using Newtonsoft.Json;
 
 public partial class Thumb

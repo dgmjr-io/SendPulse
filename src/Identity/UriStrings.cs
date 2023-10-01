@@ -11,6 +11,7 @@
  */
 
 namespace SendPulse.Identity;
+
 public static partial class ClaimTypeNames
 {
     /// <summary>The base URI for the SendPulse API.</summary>
@@ -43,5 +44,6 @@ public static partial class ClaimTypeNames
 
     /// <summary>The URI for the SendPulse API's OAuth2 endpoint.</summary>
     /// <value><inheritdoc cref="OAuth" /><inheritdoc cref="UriFragments.AccessToken" /></value>
-    public const string OAuth2EndpointUri = ApiBaseUri + UriFragments.OAuth + UriFragments.AccessToken;
+    public const string OAuth2EndpointUri =
+        ApiBaseUri + UriFragments.OAuth + UriFragments.AccessToken;
 }

@@ -11,6 +11,7 @@
  */
 
 namespace SendPulse.Telegram;
+
 using System.Text.Json;
 using Newtonsoft.Json;
 

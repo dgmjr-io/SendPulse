@@ -116,7 +116,8 @@ namespace SendPulse.Api.Client
             IStringDictionary apiKey,
             IStringDictionary apiKeyPrefix,
             string basePath = "https://api.sendpulse.com/telegram"
-        ) : this()
+        )
+            : this()
         {
             if (string.IsNullOrWhiteSpace(basePath))
                 throw new ArgumentException("The provided basePath is invalid.", "basePath");

@@ -37,7 +37,6 @@ public static partial class ClaimTypeNames
         /// <value>object_id/</value>
         public const string ObjectId = "object_id/";
 
-
         // public const string Telegram = "telegram/";
         // public const string TelegramBots = "bots/";
         // public const string TelegramBotsStart = "start/";

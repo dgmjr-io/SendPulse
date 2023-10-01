@@ -38,7 +38,8 @@ namespace SendPulse.Api.Client
         /// </summary>
         /// <param name="errorCode">HTTP status code.</param>
         /// <param name="message">Error message.</param>
-        public ApiException(int errorCode, string message) : base(message)
+        public ApiException(int errorCode, string message)
+            : base(message)
         {
             this.ErrorCode = errorCode;
         }

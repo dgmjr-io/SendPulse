@@ -12,6 +12,7 @@
 
 namespace SendPulse.Identity;
 
+
 // public static class ClaimTypes
 // {
 //     public static readonly Dgmjr.Identity.Claims.ClaimType SendPulseContactId = new("SendPulseContactId", "SendPulse Contact Id");

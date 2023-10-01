@@ -40,7 +40,8 @@ namespace SendPulse.Api.Models
             PagingData? pagingData = default,
             Links? links = default,
             PagingData meta = default
-        ) : base(success, data, pagingData, links, meta) { }
+        )
+            : base(success, data, pagingData, links, meta) { }
 
         public GetBotsChatsByBotIdResponse() { }
 

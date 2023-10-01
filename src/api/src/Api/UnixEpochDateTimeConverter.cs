@@ -1,4 +1,5 @@
 ﻿namespace SendPulse.Api;
+
 using System;
 using System.Text.RegularExpressions;
 using System.Text.Json.Serialization;

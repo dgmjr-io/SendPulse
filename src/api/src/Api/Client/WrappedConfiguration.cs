@@ -11,6 +11,7 @@
  */
 
 namespace SendPulse.Api.Client;
+
 using SendPulse.Api.Client.Abstractions;
 
 public class WrappedConfiguration : Abstractions.IConfiguration
