@@ -70,12 +70,12 @@ public enum ClaimType
     [Uri(ClaimTypeNames.ObjectId)]
     ObjectId,
 
-    /// <inheritdoc cref="ClaimTypeNames.OAuth2EncpointUri" />
+    /// <inheritdoc cref="ClaimTypeNames.OAuth2EndpointUri" />
     [Display(
         Name = "The OAuth2 Endpoint URI",
-        ShortName = nameof(OAuth2EncpointUri),
+        ShortName = nameof(OAuth2EndpointUri),
         Description = "The URI for the SendPulse API's OAuth2 endpoint."
     )]
-    [Uri(ClaimTypeNames.OAuth2EncpointUri)]
+    [Uri(ClaimTypeNames.OAuth2EndpointUri)]
     OAuth2EndpointUri
 }

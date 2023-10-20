@@ -15,35 +15,34 @@ namespace SendPulse.Identity;
 public static partial class ClaimTypeNames
 {
     /// <summary>The base URI for the SendPulse API.</summary>
-    /// <value>https://api.sendpulse.com/</value>
-    public const string ApiBaseUri = "https://api.sendpulse.com/";
+    /// <value>https://api.sendpulse.com</value>
+    public const string ApiBaseUri = "https://api.sendpulse.com";
 
     /// <summary>The base URI for the SendPulse API.</summary>
-    /// <value><inheritdoc cref="ApiBaseUri" /><inheritdoc cref="UriFragments.Telegram" /></value>
-    public const string TelegramApi = ApiBaseUri + UriFragments.Telegram;
+    /// <value><inheritdoc cref="ApiBaseUri" />/<inheritdoc cref="UriFragments.Telegram" /></value>
+    public const string TelegramApi = ApiBaseUri + "/" + UriFragments.Telegram;
 
     /// <summary>The base URI for the SendPulse domain.</summary>
-    /// <value>https://sendpulse.com/</value>
-    public const string BaseUri = "https://sendpulse.com/";
+    /// <value>https://sendpulse.com</value>
+    public const string BaseUri = "https://sendpulse.com";
 
     /// <summary>The base URI for the SendPulse identity domain.</summary>
-    /// <value><inheritdoc cref="BaseUri" /><inheritdoc cref="UriFragments.Identity" /></value>
-    public const string Identity = BaseUri + SpIdFrags.Identity;
+    /// <value><inheritdoc cref="BaseUri" />/<inheritdoc cref="UriFragments.Identity" /></value>
+    public const string Identity = BaseUri + "/" + SpIdFrags.Identity;
 
     /// <summary>A URI for a SendPulse object ID.</summary>
-    /// <value><inheritdoc cref="BaseUri" /><inheritdoc cref="UriFragments.ObjectId" /></value>
-    public const string ObjectId = Identity + SpIdFrags.ObjectId;
+    /// <value><inheritdoc cref="BaseUri" />/<inheritdoc cref="UriFragments.ObjectId" /></value>
+    public const string ObjectId = Identity + "/" + SpIdFrags.ObjectId;
 
     /// <summary>The base URI for the SendPulse domain.</summary>
-    /// <value><inheritdoc cref="Identity" /><inheritdoc cref="UriFragments.ContactId"  /></value>
-    public const string ContactId = Identity + SpIdFrags.ContactId;
+    /// <value><inheritdoc cref="Identity" />/<inheritdoc cref="UriFragments.ContactId"  /></value>
+    public const string ContactId = Identity + "/" + SpIdFrags.ContactId;
 
     /// <summary>The base URI for the SendPulse API's oauth endpoint.</summary>
-    /// <value><inheritdoc cref="ApiBaseUri" /><inheritdoc cref="UriFragments.OAuth" /></value>
-    public const string OAuth = ApiBaseUri + UriFragments.OAuth;
+    /// <value><inheritdoc cref="ApiBaseUri" />/<inheritdoc cref="UriFragments.OAuth" /></value>
+    public const string OAuth = ApiBaseUri + "/" + UriFragments.OAuth;
 
     /// <summary>The URI for the SendPulse API's OAuth2 endpoint.</summary>
-    /// <value><inheritdoc cref="OAuth" /><inheritdoc cref="UriFragments.AccessToken" /></value>
-    public const string OAuth2EndpointUri =
-        ApiBaseUri + UriFragments.OAuth + UriFragments.AccessToken;
+    /// <value><inheritdoc cref="OAuth" />/<inheritdoc cref="UriFragments.AccessToken" /></value>
+    public const string OAuth2EndpointUri = OAuth + "/" + UriFragments.AccessToken;
 }
