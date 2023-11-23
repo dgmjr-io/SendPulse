@@ -14,68 +14,69 @@ namespace SendPulse.Identity.Enums;
 
 using System.ComponentModel.DataAnnotations;
 
+[GenerateEnumerationRecordClass("ClaimType", "SendPulse.Identity.ClaimTypes")]
 public enum ClaimType
 {
-    /// <inheritdoc cref="ClaimTypeNames.ApiBaseUri" />
+    /// <inheritdoc cref="SpId.ApiBaseUri" />
     [Display(
         Name = "API Base URI",
         ShortName = nameof(ApiBaseUri),
         Description = "The base URI for the SendPulse API."
     )]
-    [Uri(ClaimTypeNames.ApiBaseUri)]
+    [Uri(SpId.ApiBaseUri)]
     ApiBaseUri,
 
-    /// <inheritdoc cref="ClaimTypeNames.TelegramApi" />
+    /// <inheritdoc cref="SpId.TelegramApi" />
     [Display(
         Name = "Telegram API Base URI",
         ShortName = nameof(TelegramApi),
         Description = "The base URI for the SendPulse Telegram Chatbot API."
     )]
-    [Uri(ClaimTypeNames.TelegramApi)]
+    [Uri(SpId.TelegramApi)]
     TelegramApi,
 
-    /// <inheritdoc cref="ClaimTypeNames.BaseUri" />
+    /// <inheritdoc cref="SpId.BaseUri" />
     [Display(
-        Name = "The SendPulsee base URI",
+        Name = "The SendPulse base URI",
         ShortName = nameof(BaseUri),
         Description = "The base URI for the SendPulse domain."
     )]
-    [Uri(ClaimTypeNames.BaseUri)]
+    [Uri(SpId.BaseUri)]
     BaseUri,
 
-    /// <inheritdoc cref="ClaimTypeNames.Identity" />
+    /// <inheritdoc cref="SpId.Identity" />
     [Display(
         Name = "The base URI for all identity claims",
         ShortName = nameof(Identity),
         Description = "The base URI for the SendPulse identity domain."
     )]
-    [Uri(ClaimTypeNames.Identity)]
+    [Uri(SpId.Identity)]
     Identity,
 
-    /// <inheritdoc cref="ClaimTypeNames.ContactId" />
+    /// <inheritdoc cref="SpId.ContactId" />
     [Display(
         Name = "The URI for a contact ID",
         ShortName = nameof(ContactId),
         Description = "The base URI for the SendPulse domain."
     )]
-    [Uri(ClaimTypeNames.ContactId)]
+    [Uri(SpId.ContactId)]
     ContactId,
 
-    /// <inheritdoc cref="ClaimTypeNames.ObjectId" />
+    /// <inheritdoc cref="SpId.ObjectId" />
     [Display(
         Name = "The URI for a contact ID",
         ShortName = nameof(ObjectId),
         Description = "The base URI for a SendPulse object ID."
     )]
-    [Uri(ClaimTypeNames.ObjectId)]
+    [Uri(SpId.ObjectId)]
     ObjectId,
 
-    /// <inheritdoc cref="ClaimTypeNames.OAuth2EndpointUri" />
+    /// <inheritdoc cref="SpId.OAuth2EndpointUri" />
     [Display(
         Name = "The OAuth2 Endpoint URI",
         ShortName = nameof(OAuth2EndpointUri),
         Description = "The URI for the SendPulse API's OAuth2 endpoint."
     )]
-    [Uri(ClaimTypeNames.OAuth2EndpointUri)]
+    [Uri(SpId.OAuth2EndpointUri)]
     OAuth2EndpointUri
 }
