@@ -16,9 +16,11 @@ using Dgmjr.Identity;
 
 /// <summary>The URI for a claim that specifies the SendPulse ID</summary>
 /// <value><inheritdoc cref="UriString" path="/value" /></value>
-public record class SendPulseId : ClaimType<DgmjrCvt.ObjectId>, IClaimType
+public record class SendPulseId : Dgmjr.Identity.ClaimType, IClaimType<DgmjrCvt.ObjectId>
 {
     public static readonly IClaimType Instance = new SendPulseId();
+
+    public override uri? ClaimValueTypeUri => DgmjrCvt.ObjectId.UriString;
 
     private SendPulseId() { }
 
@@ -45,4 +47,9 @@ public record class SendPulseId : ClaimType<DgmjrCvt.ObjectId>, IClaimType
 
     /// <value><inheritdoc cref="ShortUriString" /></value>
     public override uri ShortUri => ShortUriString;
+}
+
+public partial record class ClaimType : Dgmjr.Identity.ClaimType
+{
+    public override uri? ClaimValueTypeUri => throw new NotImplementedException();
 }

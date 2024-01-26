@@ -70,16 +70,16 @@ public static class SendPulseIdEfCoreExtensions
         return migrationBuilder;
     }
 
-    public static MigrationBuilder RollBackHasSendPulseIdFunction(
+    public static MigrationBuilder RollBackGetSendPulseIdFunction(
         this MigrationBuilder migrationBuilder
-    ) => migrationBuilder.RollBackHasSendPulseIdFunction(ufn_ + Constants.GetSendPulseId);
+    ) => migrationBuilder.RollBackGetSendPulseIdFunction(ufn_ + Constants.GetSendPulseId);
 
-    public static MigrationBuilder RollBackHasSendPulseIdFunction(
+    public static MigrationBuilder RollBackGetSendPulseIdFunction(
         this MigrationBuilder migrationBuilder,
         string functionName
-    ) => migrationBuilder.RollBackHasSendPulseIdFunction(DboSchema.ShortName, functionName);
+    ) => migrationBuilder.RollBackGetSendPulseIdFunction(DboSchema.ShortName, functionName);
 
-    public static MigrationBuilder RollBackHasSendPulseIdFunction(
+    public static MigrationBuilder RollBackGetSendPulseIdFunction(
         this MigrationBuilder migrationBuilder,
         string schema,
         string functionName
